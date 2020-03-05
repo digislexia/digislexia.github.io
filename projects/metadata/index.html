@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello meta</h1>
+  <script>
+    // title
+    const titleMeta = document.createElement('meta');
+    titleMeta.setAttribute('property', 'og:url');
+    titleMeta.content = 'openGraph url';
+    document.head.append(titleMeta);
+    // image
+    const imageMeta = document.createElement('meta');
+    imageMeta.setAttribute('property', 'og:image');
+    imageMeta.content = 'https://ngzt.ru/uploads/ngzt/blog/illustration/image/48266/preview_img-20170808010207-409.jpg';
+    document.head.append(imageMeta);
+  </script>
+</body>
+</html>
